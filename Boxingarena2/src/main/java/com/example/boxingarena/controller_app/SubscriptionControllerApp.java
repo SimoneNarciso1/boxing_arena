@@ -14,7 +14,6 @@ import com.example.boxingarena.entity.Tournament;
 import com.example.boxingarena.entity.User;
 import com.example.boxingarena.exception.DuplicateReceiptException;
 import com.example.boxingarena.exception.ReceiptNotFoundException;
-import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.IOException;
 import java.sql.SQLException;
