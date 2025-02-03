@@ -250,7 +250,7 @@ public class MainController implements Initializable {
     private PasswordField adminConfirmPassword;
 
     @FXML
-    private AnchorPane BoxerForm;
+    private AnchorPane boxerForm;
 
     @FXML
     private TextField boxerUsername;
@@ -353,18 +353,18 @@ public class MainController implements Initializable {
             case ROLE_1 -> {
                 adminform.setVisible(true);
                 refreeForm.setVisible(false);
-                BoxerForm.setVisible(false);
+                boxerForm.setVisible(false);
                 loginForm.setVisible(false);
             }
             case ROLE_2 -> {
                 adminform.setVisible(false);
                 refreeForm.setVisible(false);
-                BoxerForm.setVisible(true);
+                boxerForm.setVisible(true);
                 loginForm.setVisible(false);
             }
             case ROLE_3 -> {
                 refreeForm.setVisible(true);
-                BoxerForm.setVisible(false);
+                boxerForm.setVisible(false);
                 refreeForm.setVisible(true);
                 loginForm.setVisible(false);
             }
@@ -376,7 +376,7 @@ public class MainController implements Initializable {
         loginForm.setVisible(true);
         adminform.setVisible(false);
         refreeForm.setVisible(false);
-        BoxerForm.setVisible(false);
+        boxerForm.setVisible(false);
     }
 
     @FXML
@@ -389,7 +389,7 @@ public class MainController implements Initializable {
             else if (refreeForm.isVisible()) {
                 setVisibleOfSigning(userBean, refreeUsername, refreePassword, refreeConfirmPassword);
             }
-            else if (BoxerForm.isVisible()) {
+            else if (boxerForm.isVisible()) {
                 setVisibleOfSigning(userBean, boxerUsername, boxerPassword, boxerConfirmPassword);
             }
 

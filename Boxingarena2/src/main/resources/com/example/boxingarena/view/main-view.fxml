@@ -68,7 +68,7 @@
             <PasswordField fx:id="adminConfirmPassword" layoutX="358.0" layoutY="273.0" prefHeight="45.0" prefWidth="265.0" promptText="Confirm Password" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="BoxerForm" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="" visible="false">
+      <AnchorPane fx:id="boxerForm" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="" visible="false">
          <children>
             <Label layoutX="398.0" layoutY="82.0" text="Register Account" textFill="WHITE">
                <font>

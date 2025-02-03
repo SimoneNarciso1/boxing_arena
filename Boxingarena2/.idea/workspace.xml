@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28979351-5bb6-400f-8bef-9c3cecf83a5b" name="Changes" comment="fix duplicate code 4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="28979351-5bb6-400f-8bef-9c3cecf83a5b" name="Changes" comment="fix duplicate code 4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -299,6 +297,7 @@
       <workItem from="1738532719511" duration="21000" />
       <workItem from="1738536289674" duration="56000" />
       <workItem from="1738537489501" duration="80000" />
+      <workItem from="1738580804463" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="first commit1">
       <option name="closed" value="true" />

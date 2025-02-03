@@ -39,7 +39,6 @@ public class BoxerRankingControllerApp {
         throw new IllegalStateException("Utility class");
     }
     public static List<BoxerRankingBean> getBoxerRanking() throws SQLException {
-        BoxerRankingDao leadBoardDao = new BoxerRankingDao();
         var leadBoardsBean = new ArrayList<BoxerRankingBean>();
         var leadBoards = BoxerRankingDao.getBoxerRanking();
         for (BoxerRanking leadBoard : leadBoards) {

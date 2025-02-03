@@ -59,7 +59,7 @@ public class ReceiptDAOCSV extends ReceiptDAO {
         return retrieveByUserId(this.fd, userId);
     }
 
-    private synchronized Receipt retrieveByUserId(File fd, int userId) throws IOException, CsvValidationException, ReceiptNotFoundException, SQLException {
+    private synchronized Receipt retrieveByUserId(File fd, int userId) throws IOException, CsvValidationException, ReceiptNotFoundException {
         try (CSVReader csvReader = new CSVReader(new BufferedReader(new FileReader(fd)))) {
             String[] recordToTake;
 

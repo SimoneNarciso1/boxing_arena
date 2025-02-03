@@ -75,7 +75,7 @@ public class SubscriptionControllerApp {
         subscriptionDao.updateSubscription(point, id, tournamentId);
     }
 
-    public static void createReceipt(ReceiptBean receiptBean) throws IOException, SQLException, CsvValidationException, ReceiptNotFoundException, DuplicateReceiptException {
+    public static void createReceipt(ReceiptBean receiptBean) throws IOException, SQLException, ReceiptNotFoundException, DuplicateReceiptException {
 
         Receipt receipt = new Receipt(LocalDate.now(), receiptBean.getIdBoxer(), receiptBean.getIdTournament());
 
