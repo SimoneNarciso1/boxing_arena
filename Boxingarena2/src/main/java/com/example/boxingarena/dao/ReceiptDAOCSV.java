@@ -18,7 +18,7 @@ public class ReceiptDAOCSV extends ReceiptDAO {
     private static final Integer INDEX_BOXER_ID = 1;
     private static final Integer INDEX_TOURNAMENT_ID = 2;
     private final Logger logger = Logger.getLogger(ReceiptDAOCSV.class.getName());
-    private static final String CSV_FILE_NAME = "src/main/resources/com/example/kartgp/receipts/ReceiptDBlocal.csv";
+    private static final String CSV_FILE_NAME = "src/main/resources/com/example/boxingarena/receipts/ReceiptDBlocal.csv";
     private final File fd;
 
     public ReceiptDAOCSV() throws IOException {
