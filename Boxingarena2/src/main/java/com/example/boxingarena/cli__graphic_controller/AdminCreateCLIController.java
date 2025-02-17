@@ -3,6 +3,7 @@ package com.example.boxingarena.cli__graphic_controller;
 import com.example.boxingarena.bean.TournamentBean;
 import com.example.boxingarena.bean.UserBean;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
+import com.example.boxingarena.exception.InvalidFormatException;
 import com.example.boxingarena.utilities.CLIPrinter;
 
 import java.io.BufferedReader;
@@ -15,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 
 public class AdminCreateCLIController {
 
-    public void createTournament(int id) throws IOException, SQLException {
+    public void createTournament(int id) throws IOException, SQLException, InvalidFormatException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         UserBean globalBean = new UserBean();
         globalBean.setId(id);

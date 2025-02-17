@@ -1,6 +1,7 @@
 package com.example.boxingarena.cli__graphic_controller;
 
 import com.example.boxingarena.exception.InvalidFormatException;
+import com.example.boxingarena.utilities.CLIPrinter;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -8,16 +9,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BoxerCLIController extends  NavigatorCliController{
-    private final Logger logger = Logger.getLogger(AdminCLIController.class.getName());
+    private final Logger logger = Logger.getLogger(BoxerCLIController.class.getName());
     private int idUser;
 
-    public void start(int id) {
+    public void start(int id) throws InvalidFormatException {
         idUser = id;
         boolean shouldExit = false;
 
         while (!shouldExit) {
             try {
-                int choice = AdminManage();
+                int choice = adminManage();
 
                 switch (choice) {
                     case 1 -> {
@@ -43,26 +44,22 @@ public class BoxerCLIController extends  NavigatorCliController{
             } catch (InvalidFormatException e) {
                 logger.log(Level.SEVERE, e.getMessage());
             } catch (IOException | SQLException e) {
-                throw new RuntimeException(e);
+                throw new InvalidFormatException(e);
             }
         }
     }
 
 
-    private int AdminManage() {
+    private int adminManage() {
 
-        System.out.println("*** What do you want to do ? ***\n");
-        System.out.println("1) Join Tournament\n");
-        System.out.println("2) View Ranking\n");
-        System.out.println("3) View Subscription\n");
-        System.out.println("4) Logout\n");
+        CLIPrinter.printMessage("*** What do you want to do ? ***\n");
+        CLIPrinter.printMessage("1) Join Tournament\n");
+        CLIPrinter.printMessage("2) View Ranking\n");
+        CLIPrinter.printMessage("3) View Subscription\n");
+        CLIPrinter.printMessage("4) Logout\n");
         return getMenuChoice(1, 4);
     }
     private void logout() {
-        //  UserControllerApp loginControllerApplication = new UserControllerApp();
-        // UserBean userBean = new UserBean();
-        // userBean.setId(idUser);
-        // loginControllerApplication.logout(userBean);
         new LogInCLIController().start();
     }
 

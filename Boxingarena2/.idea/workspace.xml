@@ -52,49 +52,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainApp.executor": "Run",
-    "Application.MainCLIApp.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JAR Application.mysql-connector-j-8.3.0.jar.executor": "Run",
-    "JUnit.TournamentBCETest.executor": "Run",
-    "JUnit.UserBeanTest.executor": "Run",
-    "JUnit.UserBeanTest.rightField.executor": "Run",
-    "JUnit.UserDaoTest.executor": "Run",
-    "JUnit.UserDaoTest.loginRightUser.executor": "Run",
-    "JUnit.UserDaoTest.loginWrongUser.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/narcisosimone/Desktop/narciso simone/Boxingarena2",
-    "mysql-explain.agentPath": "/Users/narcisosimone/Library/Application Support/JetBrains/IdeaIC2022.2/plugins/mysql-explain-intellij-plugin/lib/mysql-explain-agent-1.1.1-with-dependencies.jar",
-    "mysql-explain.existMysqlJar": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6793103",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainCLIApp.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JAR Application.mysql-connector-j-8.3.0.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TournamentBCETest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserBeanTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserBeanTest.rightField.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserDaoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserDaoTest.loginRightUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserDaoTest.loginWrongUser.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narcisosimone/Desktop/narciso simone/Boxingarena2&quot;,
+    &quot;mysql-explain.agentPath&quot;: &quot;/Users/narcisosimone/Library/Application Support/JetBrains/IdeaIC2022.2/plugins/mysql-explain-intellij-plugin/lib/mysql-explain-agent-1.1.1-with-dependencies.jar&quot;,
+    &quot;mysql-explain.existMysqlJar&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6793103&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\simon\Desktop\narciso simone\Boxingarena2\src\main\java\com\example\boxingarena\graphic_controller" />
@@ -315,6 +315,7 @@
       <workItem from="1739817528881" duration="83000" />
       <workItem from="1739818357805" duration="517000" />
       <workItem from="1739819162367" duration="103000" />
+      <workItem from="1739819358182" duration="2485000" />
     </task>
     <task id="LOCAL-00001" summary="first commit1">
       <option name="closed" value="true" />

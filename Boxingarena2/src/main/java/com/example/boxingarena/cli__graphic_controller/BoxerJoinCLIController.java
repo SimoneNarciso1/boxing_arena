@@ -3,6 +3,7 @@ package com.example.boxingarena.cli__graphic_controller;
 import com.example.boxingarena.bean.*;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import com.example.boxingarena.controller_app.SubscriptionControllerApp;
+import com.example.boxingarena.exception.InvalidFormatException;
 import com.example.boxingarena.utilities.CLIPrinter;
 
 
@@ -16,7 +17,7 @@ import java.time.LocalDate;
 
 public class BoxerJoinCLIController {
 
-    public void joinTournament(int id ) throws SQLException, IOException {
+    public void joinTournament(int id ) throws SQLException, IOException, InvalidFormatException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 
@@ -24,20 +25,22 @@ public class BoxerJoinCLIController {
 
 
         if (tournaments.isEmpty()) {
-            System.out.println("Nessun torneo disponibile.");
+            CLIPrinter.printMessage("Nessun torneo disponibile.");
         } else {
-            System.out.println("Elenco di tutti i tornei:");
-            System.out.printf("%-5s %-20s %-20s %-15s %-10s\n", "ID", "Nome", "Località", "Data", "Costo");
+            CLIPrinter.printMessage("Elenco di tutti i tornei:");
+            String header = String.format("%-5s %-20s %-20s %-15s %-10s\n", "ID", "Nome", "Località", "Data", "Costo");
+            CLIPrinter.printMessage(header);
             for (BoxingTournament tournament : tournaments) {
-                System.out.printf("%-5d %-20s %-20s %-15s %-10d\n",
+                String tournamentDetails = String.format("%-5d %-20s %-20s %-15s %-10d\n",
                         tournament.getId(),
                         tournament.getName(),
                         tournament.getLocation(),
                         tournament.getDate().toString(),
                         tournament.getCost());
+                CLIPrinter.printMessage(tournamentDetails);
             }
 
-            System.out.println("\nVuoi procedere con il pagamento e l'iscrizione per un torneo? Inserisci l'ID del torneo:");
+            CLIPrinter.printMessage("\nVuoi procedere con il pagamento e l'iscrizione per un torneo? Inserisci l'ID del torneo:");
             try (Scanner scanner = new Scanner(System.in)) {
                 int tournamentId = Integer.parseInt(scanner.nextLine().trim());
                 BoxingTournament selectedTournament = tournaments.stream()
@@ -46,16 +49,16 @@ public class BoxerJoinCLIController {
                         .orElse(null);
 
                 if (selectedTournament != null) {
-                    CLIPrinter.printMessage("Insert Boxer Name");
+                    CLIPrinter.printMessage("\nInsert Boxer Name");
                     String UserName = reader.readLine();
                     payAndSubscriptionCLI(id, UserName, selectedTournament);
                 } else {
-                    System.out.println("ID torneo non trovato.");
+                   CLIPrinter.printMessage("\nID torneo non trovato.");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Input non valido.");
+                CLIPrinter.printMessage("\nInput non valido.");
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                throw new InvalidFormatException(e);
             }
         }
     }
@@ -75,7 +78,7 @@ public class BoxerJoinCLIController {
             SubscriptionControllerApp.createReceipt(receiptBean);
         }
 
-        System.out.println("Pagamento e iscrizione completati per il torneo: " + boxingTournament.getName());
+        CLIPrinter.printMessage("Pagamento e iscrizione completati per il torneo: " + boxingTournament.getName());
         new BoxerCLIController().start(id);
     }
 }
