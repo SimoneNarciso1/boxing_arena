@@ -5,18 +5,10 @@ import com.example.boxingarena.bean.UserBean;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
-
-
-import java.sql.SQLException;
 
 public class AdminController extends NavigatorController implements InitializableController {
 
     private   UserBean globalBean = new UserBean();
-
-
-   @FXML
-    private AnchorPane adminpage;
 
 
     @FXML
@@ -25,15 +17,15 @@ public class AdminController extends NavigatorController implements Initializabl
 
 
     @FXML
-    public void createTournamentForm() throws SQLException {
+    public void createTournamentForm()  {
 
-        goToPageInit(adminCreateTournament,globalBean);
+        goToPageInit(ADMIN_CREATE_TOURNAMENT,globalBean);
 
     }
 
     @FXML
-    public void viewBoxingTournamentForm(ActionEvent actionEvent) throws Exception {
-        goToPageInit(viewBoxerTournament,globalBean);
+    public void viewBoxingTournamentForm(ActionEvent actionEvent) {
+        goToPageInit(VIEW_BOXER_TOURNAMENT,globalBean);
 
     }
 
@@ -42,7 +34,7 @@ public class AdminController extends NavigatorController implements Initializabl
 
     @FXML
     public void logout(){
-       goToPageInit(login,globalBean);
+       goToPageInit(LOGIN,globalBean);
     }
 
 

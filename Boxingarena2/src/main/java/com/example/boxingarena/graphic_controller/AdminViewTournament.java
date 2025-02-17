@@ -5,16 +5,13 @@ import com.example.boxingarena.bean.UserBean;
 import com.example.boxingarena.controller_app.SubscriptionControllerApp;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import com.example.boxingarena.utilities.FileGenerator;
-import com.opencsv.exceptions.CsvValidationException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
 import javafx.util.Callback;
 
-import java.io.IOException;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.logging.Logger;
@@ -23,9 +20,6 @@ public class AdminViewTournament extends NavigatorController implements Initiali
 
     private   UserBean globalBean = new UserBean();
 
-
-    @FXML
-    private AnchorPane viewboxerTournament;
 
     @FXML
     private TextArea adminNameTournament;
@@ -91,7 +85,7 @@ public class AdminViewTournament extends NavigatorController implements Initiali
     }
 
 
-    public void download(BoxingTournament tournament) throws SQLException, CsvValidationException, IOException {
+    public void download(BoxingTournament tournament) throws SQLException {
         var boxerList = SubscriptionControllerApp.getTournamentSubscription(tournament.getId());
         FileGenerator.generateFile(tournament.getName(), boxerList.toString());
         Logger logger = Logger.getLogger(getClass().getName());
@@ -102,7 +96,7 @@ public class AdminViewTournament extends NavigatorController implements Initiali
 
     @FXML
     public void backToHomeFromBoxingTournament(){
-        goToPageInit(adminPage,globalBean);
+        goToPageInit(ADMIN_PAGE,globalBean);
     }
 
 

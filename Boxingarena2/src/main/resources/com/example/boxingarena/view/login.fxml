@@ -95,7 +95,7 @@
             </ImageView>
             <TextField fx:id="loginUsername" layoutX="388.0" layoutY="319.0" prefHeight="31.0" prefWidth="211.0" promptText="Username" />
             <PasswordField fx:id="loginPassword" layoutX="388.0" layoutY="413.0" prefHeight="26.0" prefWidth="211.0" promptText="Password" />
-            <Button fx:id="loginBtn" layoutX="430.0" layoutY="478.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="138.0" text="LOGIN">
+            <Button fx:id="loginBtn" layoutX="430.0" layoutY="478.0" mnemonicParsing="false" onAction="#loginToPage" prefHeight="31.0" prefWidth="138.0" text="LOGIN">
                <font>
                   <Font size="15.0" />
                </font>

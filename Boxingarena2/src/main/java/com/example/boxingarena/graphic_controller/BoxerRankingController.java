@@ -46,7 +46,7 @@ public class BoxerRankingController extends NavigatorController implements  Init
 
     @FXML
     public void backToHomeFromBoxerRanking(){
-        goToPageInit(BoxerPage,globalBean);
+        goToPageInit(BOXER_PAGE,globalBean);
     }
 
     @Override

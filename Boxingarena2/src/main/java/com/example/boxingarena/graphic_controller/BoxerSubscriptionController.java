@@ -10,16 +10,11 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
 
 import java.sql.SQLException;
 import java.time.LocalDate;
 
 public class BoxerSubscriptionController extends NavigatorController implements InitializableController{
-
-
-    @FXML
-    private AnchorPane boxerMySubscription;
 
     @FXML
     public TableColumn<BoxingTournament, Integer> boxerMySubscriptionCost;
@@ -58,7 +53,7 @@ public class BoxerSubscriptionController extends NavigatorController implements 
    }
     @FXML
     public void backToHomeFromSubscriptionTable(){
-       goToPageInit(BoxerPage,globalBean);
+       goToPageInit(BOXER_PAGE,globalBean);
     }
 
     @Override

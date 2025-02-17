@@ -111,7 +111,7 @@ public class LoginController extends NavigatorController implements Initializabl
 
 
     @FXML
-    public void login() {  // vai alla pagina  dal login
+    public void loginToPage() {
         try {
             UserBean userBean = new UserBean();
             userBean.setUsername(loginUsername.getText());
@@ -121,16 +121,16 @@ public class LoginController extends NavigatorController implements Initializabl
 
 
             if(userBean.getRole().equals(ROLE_1)) {
-                goToPageInit(adminPage, userBean);
+                goToPageInit(ADMIN_PAGE, userBean);
             }
 
             if(userBean.getRole().equals(ROLE_2)) {
-                goToPageInit(BoxerPage, userBean);
+                goToPageInit(BOXER_PAGE, userBean);
             }
 
             if(userBean.getRole().equals(ROLE_3)) {
 
-                goToPageInit(RefreePage, userBean);
+                goToPageInit(REFREE_PAGE, userBean);
 
             }
 

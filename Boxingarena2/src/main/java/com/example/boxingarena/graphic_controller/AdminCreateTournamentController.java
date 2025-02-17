@@ -47,7 +47,7 @@ public class AdminCreateTournamentController extends NavigatorController impleme
 
     @FXML
     public void backToHomeFromCreate() {
-       goToPageInit(adminPage,globalBean);
+       goToPageInit(ADMIN_PAGE,globalBean);
     }
 
     @Override

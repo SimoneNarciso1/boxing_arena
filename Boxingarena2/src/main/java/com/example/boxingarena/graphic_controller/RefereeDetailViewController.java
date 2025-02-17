@@ -127,11 +127,11 @@ public class RefereeDetailViewController extends NavigatorController implements 
 
     @FXML
     public void backToHomeFromRefereeDetail(){
-        goToPageInit(RefreePage,globalBean);
+        goToPageInit(REFREE_PAGE,globalBean);
     }
 
     @Override
-    public void initializeData2(Object data, int id) throws Exception {
+    public void initializeData2(Object data, int id) throws SQLException {
         if (data instanceof UserBean userBean){
             globalBean.setId(userBean.getId());
             globalBean.setUsername(userBean.getUsername());

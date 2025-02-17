@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.example.boxingarena.graphic_controller.NavigatorController.login;
+import static com.example.boxingarena.graphic_controller.NavigatorController.LOGIN;
 
 public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource(login));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource(LOGIN));
         Scene scene = new Scene(fxmlLoader.load(),1020, 640);
         NavigatorBase navigator = NavigatorBase.getInstance(stage);
         navigator.getStg().setScene(scene);

@@ -3,6 +3,7 @@ package com.example.boxingarena.graphic_controller;
 import com.example.boxingarena.bean.BoxingTournament;
 import com.example.boxingarena.bean.UserBean;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
+import com.example.boxingarena.exception.InvalidFormatException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -47,8 +48,7 @@ public class RefereeController extends NavigatorController implements  Initializ
     public TableColumn<BoxingTournament, String> refereeTournamentName;
 
 
-    private void goToRefereePage() throws Exception {
-      //  refereeName.setText(globalBean.getUsername());
+    private void goToRefereePage() throws  SQLException {
         refereeTournamentId.setCellValueFactory(new PropertyValueFactory<BoxingTournament, Integer>("id"));
         refereeTournamentName.setCellValueFactory(new  PropertyValueFactory<BoxingTournament, String>("name"));
         refereeLocation.setCellValueFactory(new  PropertyValueFactory<BoxingTournament, String>("location"));
@@ -87,8 +87,8 @@ public class RefereeController extends NavigatorController implements  Initializ
         refereeDetail.setCellFactory(cellFactory);
     }
 
-    private void detail(int id) throws SQLException {
-        goToPageInit2(RefreeDetailView,globalBean, id);
+    private void detail(int id)  {
+        goToPageInit2(REFREE_DETAIL_VIEW,globalBean, id);
 
     }
 
@@ -96,12 +96,12 @@ public class RefereeController extends NavigatorController implements  Initializ
 
     @FXML
     public void logout(){
-        goToPageInit(login,globalBean);
+        goToPageInit(LOGIN,globalBean);
     }
 
 
     @Override
-    public void initializeData(Object data) throws Exception {
+    public void initializeData(Object data) throws InvalidFormatException, SQLException {
         if (data instanceof UserBean userBean){
             globalBean.setId(userBean.getId());
             globalBean.setUsername(userBean.getUsername());

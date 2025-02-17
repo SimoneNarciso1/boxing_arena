@@ -8,16 +8,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class RefereeCLIController extends NavigatorCliController{
-    private final Logger logger = Logger.getLogger(AdminCLIController.class.getName());
+    private final Logger logger = Logger.getLogger(RefereeCLIController.class.getName());
     private int idUser;
 
-    public void start(int id) {
+    public void start(int id) throws InvalidFormatException {
         idUser = id;
         boolean shouldExit = false;
 
         while (!shouldExit) {
             try {
-                int choice = AdminManage();
+                int choice = adminManage();
 
                 switch (choice) {
                     case 1 -> {
@@ -34,13 +34,13 @@ public class RefereeCLIController extends NavigatorCliController{
             } catch (InvalidFormatException e) {
                 logger.log(Level.SEVERE, e.getMessage());
             } catch (SQLException e) {
-                throw new RuntimeException(e);
+                throw new InvalidFormatException(e);
             }
         }
     }
 
 
-    private int AdminManage() {
+    private int adminManage() {
 
         CLIPrinter.printMessage("*** What do you want to do ? ***\n");
         CLIPrinter.printMessage("1) View List\n");

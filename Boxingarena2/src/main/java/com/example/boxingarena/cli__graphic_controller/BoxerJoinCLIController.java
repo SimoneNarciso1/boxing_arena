@@ -3,7 +3,9 @@ package com.example.boxingarena.cli__graphic_controller;
 import com.example.boxingarena.bean.*;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import com.example.boxingarena.controller_app.SubscriptionControllerApp;
+import com.example.boxingarena.exception.DuplicateReceiptException;
 import com.example.boxingarena.exception.InvalidFormatException;
+import com.example.boxingarena.exception.ReceiptNotFoundException;
 import com.example.boxingarena.utilities.CLIPrinter;
 
 
@@ -50,8 +52,8 @@ public class BoxerJoinCLIController {
 
                 if (selectedTournament != null) {
                     CLIPrinter.printMessage("\nInsert Boxer Name");
-                    String UserName = reader.readLine();
-                    payAndSubscriptionCLI(id, UserName, selectedTournament);
+                    String userName = reader.readLine();
+                    payAndSubscriptionCLI(id, userName, selectedTournament);
                 } else {
                    CLIPrinter.printMessage("\nID torneo non trovato.");
                 }
@@ -62,11 +64,11 @@ public class BoxerJoinCLIController {
             }
         }
     }
-    public void payAndSubscriptionCLI( int id, String Name ,BoxingTournament boxingTournament) throws Exception {
+    public void payAndSubscriptionCLI( int id, String name ,BoxingTournament boxingTournament) throws InvalidFormatException, SQLException, ReceiptNotFoundException, IOException, DuplicateReceiptException {
         TournamentBean tournamentBean = new TournamentBean(boxingTournament.getId(), boxingTournament.getName());
         UserBean globalBean = new UserBean();
         globalBean.setId(id);
-        globalBean.setUsername(Name);
+        globalBean.setUsername(name);
         SubscriptionControllerApp.payAndSubscription(globalBean, tournamentBean);
 
         List<SubscriptionBean> subscriptionBeanList = SubscriptionControllerApp.getTournamentSubscription(boxingTournament.getId());

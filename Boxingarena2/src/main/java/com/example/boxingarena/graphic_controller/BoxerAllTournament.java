@@ -8,7 +8,6 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
 import javafx.util.Callback;
 
 import java.sql.SQLException;
@@ -21,8 +20,6 @@ public class BoxerAllTournament extends NavigatorController implements Initializ
 
     @FXML
     private TextArea boxerName1;
-    @FXML
-    private AnchorPane viewAllTournament;
 
     @FXML
     public TableColumn<BoxingTournament, Integer> viewAllTournamentCost;
@@ -103,8 +100,7 @@ public class BoxerAllTournament extends NavigatorController implements Initializ
     }
     @FXML
     public void backToHomeFromAllTournament() {
-        //boxerName.setText(globalBean.getUsername());
-        goToPageInit(BoxerPage,globalBean);
+        goToPageInit(BOXER_PAGE,globalBean);
     }
 
     @Override
