@@ -4,7 +4,6 @@ import com.example.boxingarena.bean.TournamentBean;
 import com.example.boxingarena.bean.UserBean;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import com.example.boxingarena.utilities.CLIPrinter;
-import com.example.boxingarena.cli__graphic_controller.AdminCLIController;
 
 import java.io.BufferedReader;
 import java.io.IOException;

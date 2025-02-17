@@ -1,22 +1,15 @@
 package com.example.boxingarena.cli__graphic_controller;
 
-import com.example.boxingarena.bean.TournamentBean;
-import com.example.boxingarena.bean.UserBean;
-import com.example.boxingarena.controller_app.TournamentControllerApp;
-import com.example.boxingarena.controller_app.UserControllerApp;
+
 import com.example.boxingarena.utilities.CLIPrinter;
 import com.example.boxingarena.exception.InvalidFormatException;
-import com.example.boxingarena.bean.BoxingTournament;
 
-import java.io.BufferedReader;
+
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.List;
+
 
 
 import java.sql.SQLException;
@@ -74,10 +67,6 @@ public class AdminCLIController extends NavigatorCliController{
 
 
     private void logout() {
-      //  UserControllerApp loginControllerApplication = new UserControllerApp();
-       // UserBean userBean = new UserBean();
-       // userBean.setId(idUser);
-       // loginControllerApplication.logout(userBean);
         new LogInCLIController().start();
     }
 }
