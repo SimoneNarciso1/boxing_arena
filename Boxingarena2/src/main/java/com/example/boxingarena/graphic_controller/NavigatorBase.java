@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class NavigatorBase { //I have to use this Navigator because with a normal class when I use extends the class calls the Constructor and stg = null
+public class NavigatorBase {
     private final Stage stg;
 
     private static class SingletonHelper {

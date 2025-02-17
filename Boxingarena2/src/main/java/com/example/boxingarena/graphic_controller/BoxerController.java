@@ -1,22 +1,13 @@
 package com.example.boxingarena.graphic_controller;
 
-import com.example.boxingarena.graphic_controller.BoxerRankingController;
 import com.example.boxingarena.bean.*;
-import com.example.boxingarena.controller_app.BoxerRankingControllerApp;
-import com.example.boxingarena.controller_app.SubscriptionControllerApp;
-import com.example.boxingarena.controller_app.TournamentControllerApp;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Callback;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.List;
+
 
 public class BoxerController extends NavigatorController implements  InitializableController {
 
@@ -29,7 +20,7 @@ public class BoxerController extends NavigatorController implements  Initializab
     private TextArea boxerName;
 
     @FXML
-    public void joinTournament() throws Exception { // boxer viewAllTournament
+    public void joinTournament() throws Exception {
 
         goToPageInit(ViewAllTournament,globalBean);
 

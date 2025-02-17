@@ -1,7 +1,6 @@
 package com.example.boxingarena.cli__graphic_controller;
 
 import com.example.boxingarena.exception.InvalidFormatException;
-import com.example.boxingarena.utilities.CLIPrinter;
 
 import java.io.IOException;
 import java.sql.SQLException;

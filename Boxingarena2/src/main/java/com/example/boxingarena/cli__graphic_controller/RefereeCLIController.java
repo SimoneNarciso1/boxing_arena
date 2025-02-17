@@ -3,7 +3,6 @@ package com.example.boxingarena.cli__graphic_controller;
 import com.example.boxingarena.exception.InvalidFormatException;
 import com.example.boxingarena.utilities.CLIPrinter;
 
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -49,10 +48,6 @@ public class RefereeCLIController extends NavigatorCliController{
         return getMenuChoice(1, 2);
     }
     private void logout() {
-        //  UserControllerApp loginControllerApplication = new UserControllerApp();
-        // UserBean userBean = new UserBean();
-        // userBean.setId(idUser);
-        // loginControllerApplication.logout(userBean);
         new LogInCLIController().start();
     }
 }

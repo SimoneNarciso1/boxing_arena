@@ -3,18 +3,14 @@ package com.example.boxingarena.graphic_controller;
 
 import com.example.boxingarena.controller_app.UserControllerApp;
 import com.example.boxingarena.bean.UserBean;
-import com.example.boxingarena.exception.InvalidFormatException;
-import com.example.boxingarena.exception.UserNotFoundException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import com.opencsv.exceptions.CsvValidationException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
@@ -113,13 +109,6 @@ public class LoginController extends NavigatorController implements Initializabl
     private static final String ROLE_3 = "Referee";
 
 
- /*   @FXML
-    public void logout(){  // torna alla paginA DI log in non va in log in ma nelle page di ogni ruolo
-     loginForm.setVisible(true);
-     adminpage.setVisible(false);
-     boxerPage.setVisible(false);
-     refreePage.setVisible(false);
-}*/
 
     @FXML
     public void login() {  // vai alla pagina  dal login

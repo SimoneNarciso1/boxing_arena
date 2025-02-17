@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28979351-5bb6-400f-8bef-9c3cecf83a5b" name="Changes" comment="fix duplicate code 4">
-      <change beforePath="$PROJECT_DIR$/../Deliverables/1.SRS.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Deliverables/1.SRS.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deliverables/3.Design.pdf" beforeDir="false" />
-    </list>
+    <list default="true" id="28979351-5bb6-400f-8bef-9c3cecf83a5b" name="Changes" comment="fix duplicate code 4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -316,6 +313,7 @@
       <workItem from="1739554078255" duration="15348000" />
       <workItem from="1739621806482" duration="15240000" />
       <workItem from="1739817528881" duration="83000" />
+      <workItem from="1739818357805" duration="517000" />
     </task>
     <task id="LOCAL-00001" summary="first commit1">
       <option name="closed" value="true" />

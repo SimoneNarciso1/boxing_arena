@@ -66,7 +66,7 @@ public class RefereeDetailCLIController {
         SubscriptionControllerApp.updateSubscription(points, boxerId, tournamentId);
         System.out.println("Sottoscrizione aggiornata con successo!");
 
-        detailCLI(tournamentId);  // Ritorna alla vista dettagliata del torneo
+        detailCLI(tournamentId);
     }
 
 

@@ -2,7 +2,6 @@ package com.example.boxingarena.cli__graphic_controller;
 
 import com.example.boxingarena.bean.BoxingTournament;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
-import com.example.boxingarena.graphic_controller.RefereeDetailViewController;
 
 import java.sql.SQLException;
 import java.util.List;

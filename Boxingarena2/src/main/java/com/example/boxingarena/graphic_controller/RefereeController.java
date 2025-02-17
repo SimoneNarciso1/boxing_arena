@@ -1,9 +1,7 @@
 package com.example.boxingarena.graphic_controller;
 
 import com.example.boxingarena.bean.BoxingTournament;
-import com.example.boxingarena.bean.SubscriptionBean;
 import com.example.boxingarena.bean.UserBean;
-import com.example.boxingarena.controller_app.SubscriptionControllerApp;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
