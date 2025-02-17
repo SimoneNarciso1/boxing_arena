@@ -7,8 +7,8 @@ module com.example.boxingarena {
 
     exports com.example.boxingarena;
     opens com.example.boxingarena to javafx.fxml;
-    exports com.example.boxingarena.controller;
-    opens com.example.boxingarena.controller to javafx.fxml;
     exports com.example.boxingarena.bean;
     opens com.example.boxingarena.bean to javafx.fxml;
+    exports com.example.boxingarena.graphic_controller to javafx.fxml;
+    opens com.example.boxingarena.graphic_controller to javafx.fxml;
 }

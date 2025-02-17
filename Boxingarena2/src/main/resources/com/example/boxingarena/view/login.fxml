@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxingarena.graphic_controller.LoginController">
+   <children>
+      <AnchorPane fx:id="adminForm" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" visible="false">
+         <children>
+            <Label layoutX="398.0" layoutY="53.0" text="Register Account">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adminUsername" layoutX="358.0" layoutY="145.0" prefHeight="45.0" prefWidth="265.0" promptText="Username" />
+            <PasswordField fx:id="adminPassword" layoutX="359.0" layoutY="209.0" prefHeight="45.0" prefWidth="265.0" promptText="Password" />
+            <Button fx:id="adminSignupbtn" layoutX="372.0" layoutY="346.0" mnemonicParsing="false" onAction="#signup" prefHeight="36.0" prefWidth="237.0" text="SIGNUP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="359.0" layoutY="418.0" text="Alredy have an account?" />
+            <Hyperlink fx:id="adminSignin" layoutX="561.0" layoutY="415.0" onAction="#signinForm" text="sign in her" />
+            <Label layoutX="471.0" layoutY="104.0" text="Admin">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="adminConfirmPassword" layoutX="358.0" layoutY="273.0" prefHeight="45.0" prefWidth="265.0" promptText="Confirm Password" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="boxerForm" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="" visible="false">
+         <children>
+            <Label layoutX="398.0" layoutY="82.0" text="Register Account">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="boxerUsername" layoutX="359.0" layoutY="157.0" prefHeight="45.0" prefWidth="265.0" promptText="Username" />
+            <PasswordField fx:id="boxerPassword" layoutX="359.0" layoutY="232.0" prefHeight="45.0" prefWidth="265.0" promptText="Password" />
+            <Button fx:id="boxerSignupbtn" layoutX="373.0" layoutY="370.0" mnemonicParsing="false" onAction="#signup" prefHeight="36.0" prefWidth="237.0" text="SIGNUP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="373.0" layoutY="440.0" text="Alredy have an account?" />
+            <Hyperlink fx:id="boxerSignin" layoutX="547.0" layoutY="437.0" onAction="#signinForm" text="sign in her" />
+            <Label layoutX="473.0" layoutY="125.0" text="Boxer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="boxerConfirmPassword" layoutX="359.0" layoutY="302.0" prefHeight="45.0" prefWidth="265.0" promptText="Confirm Password" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="refreeForm" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" visible="false">
+         <children>
+            <Label layoutX="398.0" layoutY="56.0" text="Register Account">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="refreeUsername" layoutX="359.0" layoutY="146.0" prefHeight="45.0" prefWidth="265.0" promptText="Username" />
+            <PasswordField fx:id="refreePassword" layoutX="359.0" layoutY="224.0" prefHeight="45.0" prefWidth="265.0" promptText="Password" />
+            <Button fx:id="refreeSignupbtn" layoutX="373.0" layoutY="372.0" mnemonicParsing="false" onAction="#signup" prefHeight="36.0" prefWidth="237.0" text="SIGNUP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="359.0" layoutY="451.0" text="Alredy have an account?" />
+            <Hyperlink fx:id="refreeSignin" layoutX="547.0" layoutY="448.0" onAction="#signinForm" text="sign in her" />
+            <Label layoutX="468.0" layoutY="107.0" text="Referee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="refreeConfirmPassword" layoutX="359.0" layoutY="304.0" prefHeight="45.0" prefWidth="265.0" promptText="Confirm Password" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginForm" prefHeight="638.0" prefWidth="1242.0" styleClass="bg-form" stylesheets="@../css/main-view.css">
+         <children>
+            <ImageView fitHeight="637.0" fitWidth="984.0">
+               <image>
+                  <Image url="@loginscene.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="loginUsername" layoutX="388.0" layoutY="319.0" prefHeight="31.0" prefWidth="211.0" promptText="Username" />
+            <PasswordField fx:id="loginPassword" layoutX="388.0" layoutY="413.0" prefHeight="26.0" prefWidth="211.0" promptText="Password" />
+            <Button fx:id="loginBtn" layoutX="430.0" layoutY="478.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="138.0" text="LOGIN">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="loginRole" layoutX="424.0" layoutY="539.0" onAction="#switchForm" prefHeight="30.0" prefWidth="150.0" promptText="Choose role" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,11 +1,12 @@
 package com.example.boxingarena;
 
-import com.example.boxingarena.cli_controller.MainCLIController;
+
+import com.example.boxingarena.cli__graphic_controller.LogInCLIController;
 
 public class MainCLIApp {
     public static void main(String[] args) {
-        MainCLIController mainCLIController = new MainCLIController();
-        mainCLIController.start();
+        LogInCLIController logInCLIController = new LogInCLIController();
+        logInCLIController.start();
 
     }
 }

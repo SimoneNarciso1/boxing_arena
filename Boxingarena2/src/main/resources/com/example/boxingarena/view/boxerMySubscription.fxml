@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="boxerMySubscription" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxingarena.graphic_controller.BoxerSubscriptionController">
+   <children>
+      <ImageView fitHeight="637.0" fitWidth="983.0">
+         <image>
+            <Image url="@topbar.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="boxerMySubscriptionName" layoutX="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="130.0" text="Boxer: ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="boxerMySubscriptionTable" layoutX="34.0" layoutY="149.0" prefHeight="442.0" prefWidth="950.0">
+         <columns>
+            <TableColumn fx:id="boxerMySubscriptionId" prefWidth="150.0" text="TournamentId" />
+            <TableColumn fx:id="boxerMySubscriptionTournamentName" minWidth="0.0" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="boxerMySubscriptionLocation" minWidth="0.0" prefWidth="169.0" text="Location" />
+            <TableColumn fx:id="boxerMySubscriptionDate" minWidth="0.0" prefWidth="202.0" text="Date" />
+            <TableColumn fx:id="boxerMySubscriptionCost" minWidth="0.0" prefWidth="202.0" text="Cost" />
+         </columns>
+      </TableView>
+      <Button layoutX="801.0" layoutY="21.0" mnemonicParsing="false" onAction="#backToHomeFromSubscriptionTable" text="BackToHome" />
+   </children>
+</AnchorPane>

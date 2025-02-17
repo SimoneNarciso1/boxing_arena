@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="boxerRanking" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxingarena.graphic_controller.BoxerRankingController">
+   <children>
+      <ImageView fitHeight="638.0" fitWidth="984.0">
+         <image>
+            <Image url="@topbar.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="boxerNameLead" editable="false" layoutX="364.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="119.0" text="Boxer: ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="boxerTableLeadbooard" layoutX="249.0" layoutY="123.0" prefHeight="435.0" prefWidth="470.0">
+         <columns>
+            <TableColumn fx:id="boxerNameBoxerRanking" prefWidth="150.0" text="boxer" />
+            <TableColumn fx:id="boxerNumberMatchBoxerRanking" minWidth="0.0" prefWidth="150.0" text="NumberMatch" />
+            <TableColumn fx:id="boxerPointBoxerRanking" minWidth="0.0" prefWidth="169.0" text="TotalPoint" />
+         </columns>
+      </TableView>
+      <Button layoutX="798.0" layoutY="24.0" mnemonicParsing="false" onAction="#backToHomeFromBoxerRanking" text="BackToHome" />
+   </children>
+</AnchorPane>

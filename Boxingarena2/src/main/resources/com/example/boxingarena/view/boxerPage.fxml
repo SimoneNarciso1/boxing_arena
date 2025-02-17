@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="boxerPage" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxingarena.graphic_controller.BoxerController">
+   <children>
+      <ImageView fitHeight="637.0" fitWidth="984.0">
+         <image>
+            <Image url="@BoxerHome.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="boxerName" editable="false" layoutX="372.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="130.0" text="Boxer:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="139.0" layoutY="127.0" mnemonicParsing="false" onAction="#joinTournament" opacity="0.0" prefHeight="202.0" prefWidth="721.0" text="Join tournament">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="109.0" layoutY="403.0" mnemonicParsing="false" onAction="#viewBoxerRanking" opacity="0.0" prefHeight="183.0" prefWidth="345.0" text="View boxeranking">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="581.0" layoutY="403.0" mnemonicParsing="false" onAction="#viewMySubscription" opacity="0.0" prefHeight="183.0" prefWidth="339.0" text="View subscription">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="112.0" layoutY="17.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+   </children>
+</AnchorPane>

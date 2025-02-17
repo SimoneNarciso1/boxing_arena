@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="refereeDetailView" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@../css/main-view.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boxingarena.graphic_controller.RefereeDetailViewController">
+   <children>
+      <ImageView fitHeight="638.0" fitWidth="984.0">
+         <image>
+            <Image url="@topbar.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="refereeDetailName" editable="false" layoutX="364.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="119.0" text="Referee:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <TableView fx:id="table" layoutX="24.0" layoutY="125.0" prefHeight="486.0" prefWidth="680.0">
+         <columns>
+            <TableColumn fx:id="refereeDetailBoxerId" prefWidth="105.60000610351562" text="Boxer_id" />
+            <TableColumn fx:id="refereeDetailBoxer" prefWidth="137.5999755859375" text="Boxer" />
+            <TableColumn fx:id="refereeDetailTournament" minWidth="0.0" prefWidth="132.800048828125" text="Tournament" />
+            <TableColumn fx:id="refereeDetailTournamentId" prefWidth="134.39996337890625" text="TournamentId" />
+            <TableColumn fx:id="refereeDetailPoint" prefWidth="112.0" text="Point" />
+            <TableColumn fx:id="refereeDetailConfirm" prefWidth="168.800048828125" />
+         </columns>
+      </TableView>
+      <Button layoutX="790.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHomeFromRefereeDetail" text="BackToHome" />
+      <Spinner fx:id="boxerPointConfirm" layoutX="759.0" layoutY="356.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="boxerNameConfirm" editable="false" layoutX="759.0" layoutY="155.0" />
+      <TextField fx:id="boxerTournamentConfirm" editable="false" layoutX="761.0" layoutY="265.0" />
+      <Button layoutX="758.0" layoutY="414.0" mnemonicParsing="false" onAction="#confirm" prefHeight="26.0" prefWidth="150.0" text="Confirm" />
+      <Spinner fx:id="boxerIdConfirm" layoutX="759.0" layoutY="212.0" />
+      <Spinner fx:id="boxerTournamentIdConfirm" layoutX="760.0" layoutY="306.0" />
+   </children>
+</AnchorPane>
