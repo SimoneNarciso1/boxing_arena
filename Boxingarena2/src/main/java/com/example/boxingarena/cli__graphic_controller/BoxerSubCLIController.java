@@ -17,10 +17,10 @@ public class BoxerSubCLIController {
                 CLIPrinter.printMessage("Non ci sono iscrizioni disponibili.");
             } else {
                 CLIPrinter.printMessage("Le tue iscrizioni ai tornei:");
-                String subs = String.format("%-5s %-20s %-20s %-15s %-10s\n", "ID", "Nome", "Località", "Data", "Costo");
+                String subs = String.format("%-5s %-20s %-20s %-15s %-10s%n", "ID", "Nome", "Località", "Data", "Costo");
                 CLIPrinter.printMessage(subs);
                 for (BoxingTournament subscription : subscriptions) {
-                   String sub = String.format("%-5d %-20s %-20s %-15s %-10d\n",
+                   String sub = String.format("%-5d %-20s %-20s %-15s %-10d%n",
                             subscription.getId(),
                             subscription.getName(),
                             subscription.getLocation(),

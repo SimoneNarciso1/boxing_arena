@@ -30,10 +30,10 @@ public class BoxerJoinCLIController {
             CLIPrinter.printMessage("Nessun torneo disponibile.");
         } else {
             CLIPrinter.printMessage("Elenco di tutti i tornei:");
-            String header = String.format("%-5s %-20s %-20s %-15s %-10s\n", "ID", "Nome", "Località", "Data", "Costo");
+            String header = String.format("%-5s %-20s %-20s %-15s %-10s%n", "ID", "Nome", "Località", "Data", "Costo");
             CLIPrinter.printMessage(header);
             for (BoxingTournament tournament : tournaments) {
-                String tournamentDetails = String.format("%-5d %-20s %-20s %-15s %-10d\n",
+                String tournamentDetails = String.format("%-5d %-20s %-20s %-15s %-10d%n",
                         tournament.getId(),
                         tournament.getName(),
                         tournament.getLocation(),

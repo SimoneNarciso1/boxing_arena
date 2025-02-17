@@ -2,6 +2,7 @@ package com.example.boxingarena.cli__graphic_controller;
 
 import com.example.boxingarena.bean.BoxingTournament;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
+import com.example.boxingarena.exception.InvalidFormatException;
 import com.example.boxingarena.utilities.CLIPrinter;
 
 import java.sql.SQLException;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 public class RefereeViewCLIController {
 
-    public void viewAll(int id)throws SQLException {
+    public void viewAll(int id) throws SQLException, InvalidFormatException {
 
             List<BoxingTournament> tournaments = TournamentControllerApp.getAllTournaments();
 
@@ -18,10 +19,10 @@ public class RefereeViewCLIController {
                 CLIPrinter.printMessage("\nNessun torneo disponibile.");
             } else {
                 CLIPrinter.printMessage("\nTornei disponibili:");
-                String tournamentString = String.format("%-5s %-20s %-20s %-15s %-10s\n", "ID", "Nome", "Località", "Data", "Costo");
+                String tournamentString = String.format("%-5s %-20s %-20s %-15s %-10s%n", "ID", "Nome", "Località", "Data", "Costo");
                 CLIPrinter.printMessage(tournamentString);
                 for (BoxingTournament tournament : tournaments) {
-                    String tournamentDetail = String.format("%-5d %-20s %-20s %-15s %-10d\n",
+                    String tournamentDetail = String.format("%-5d %-20s %-20s %-15s %-10d%n",
                             tournament.getId(),
                             tournament.getName(),
                             tournament.getLocation(),
