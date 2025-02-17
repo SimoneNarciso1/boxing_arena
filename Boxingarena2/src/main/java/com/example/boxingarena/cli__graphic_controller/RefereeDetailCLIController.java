@@ -16,9 +16,9 @@ public class RefereeDetailCLIController {
         List<SubscriptionBean> subscriptions = SubscriptionControllerApp.getTournamentSubscription(id);
 
         if (subscriptions.isEmpty()) {
-            CLIPrinter.printMessage("\nNessuna iscrizione trovata per questo torneo.");
+            CLIPrinter.printMessage("%nNessuna iscrizione trovata per questo torneo.");
         } else {
-            CLIPrinter.printMessage("\nIscrizioni:");
+            CLIPrinter.printMessage("%niscrizioni:");
             String iscrizioni = String.format("%-10s %-20s %-20s %-15s %-10s%n", "ID Boxer", "Boxer", "Torneo", "ID Torneo", "Punti");
             CLIPrinter.printMessage(iscrizioni);
             for (SubscriptionBean subscription : subscriptions) {
@@ -33,7 +33,7 @@ public class RefereeDetailCLIController {
             CLIPrinter.printMessage("vuoi confermare il voto per un iscrizione? (Si digita --> 1/No  digita--> 2");
             Scanner scanner = new Scanner(System.in);
             if(Integer.parseInt(scanner.nextLine().trim()) == 1){
-                CLIPrinter.printMessage("\nInserisci l'ID Boxer:");
+                CLIPrinter.printMessage("%nInserisci l'ID Boxer:");
                 try (Scanner scanner1 = new Scanner(System.in)) {
                     int boxerId = Integer.parseInt(scanner1.nextLine().trim());
                     SubscriptionBean selectedSubscription = subscriptions.stream()
@@ -61,14 +61,14 @@ public class RefereeDetailCLIController {
                 subscription.getPoints());
         CLIPrinter.printMessage(confirmString);
        confirmCLI(  subscription.getIdBoxer(), subscription.getIdTournament(), subscription.getPoints());
-        CLIPrinter.printMessage("\nVoto confermato.");
+        CLIPrinter.printMessage("%nVoto confermato.");
     }
     public void confirmCLI(int boxerId, int tournamentId, int points) throws SQLException, InvalidFormatException {
 
 
 
         SubscriptionControllerApp.updateSubscription(points, boxerId, tournamentId);
-        CLIPrinter.printMessage("\nSottoscrizione aggiornata con successo!");
+        CLIPrinter.printMessage("%nSottoscrizione aggiornata con successo!");
 
         detailCLI(tournamentId);
     }

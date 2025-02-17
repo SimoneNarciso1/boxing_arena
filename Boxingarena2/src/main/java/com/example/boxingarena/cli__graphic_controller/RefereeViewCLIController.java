@@ -16,9 +16,9 @@ public class RefereeViewCLIController {
             List<BoxingTournament> tournaments = TournamentControllerApp.getAllTournaments();
 
             if (tournaments.isEmpty()) {
-                CLIPrinter.printMessage("\nNessun torneo disponibile.");
+                CLIPrinter.printMessage("%nNessun torneo disponibile.");
             } else {
-                CLIPrinter.printMessage("\nTornei disponibili:");
+                CLIPrinter.printMessage("%nTornei disponibili:");
                 String tournamentString = String.format("%-5s %-20s %-20s %-15s %-10s%n", "ID", "Nome", "Località", "Data", "Costo");
                 CLIPrinter.printMessage(tournamentString);
                 for (BoxingTournament tournament : tournaments) {
@@ -31,12 +31,12 @@ public class RefereeViewCLIController {
                     CLIPrinter.printMessage(tournamentDetail);
                 }
 
-                CLIPrinter.printMessage("\nInserisci l'ID del torneo per i dettagli:");
+                CLIPrinter.printMessage("%nInserisci l'ID del torneo per i dettagli:");
                 try (Scanner scanner = new Scanner(System.in)) {
                     int tournamentId = Integer.parseInt(scanner.nextLine().trim());
                    new  RefereeDetailCLIController().detailCLI(tournamentId);
                 } catch (NumberFormatException e) {
-                    CLIPrinter.printMessage("\nInput non valido. Inserisci un numero intero.");
+                    CLIPrinter.printMessage("%nInput non valido. Inserisci un numero intero.");
                 }
             }
             new RefereeCLIController().start(id);

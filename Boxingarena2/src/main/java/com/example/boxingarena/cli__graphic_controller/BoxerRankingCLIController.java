@@ -17,9 +17,9 @@ public class BoxerRankingCLIController {
         List<BoxerRankingBean> boxerRankings = BoxerRankingControllerApp.getBoxerRanking();
 
         if (boxerRankings.isEmpty()) {
-           CLIPrinter.printMessage("\nNessun dato di classifica disponibile.");
+           CLIPrinter.printMessage("%nNessun dato di classifica disponibile.");
         } else {
-            CLIPrinter.printMessage("\nClassifica Pugili:");
+            CLIPrinter.printMessage("%nClassifica Pugili:");
            String header = String.format("%-30s %-15s %-15s%n", "Nome Pugile", "Numero Match", "Punti Totali");
            CLIPrinter.printMessage(header);
             for (BoxerRankingBean ranking : boxerRankings) {

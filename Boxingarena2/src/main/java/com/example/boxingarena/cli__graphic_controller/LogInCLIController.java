@@ -97,9 +97,9 @@ public class LogInCLIController  extends  NavigatorCliController{
 
     private int showMenu() {
         helloMessage();
-        CLIPrinter.printMessage("*** What should I do for you? ***\n");
-        CLIPrinter.printMessage("1) Login\n");
-        CLIPrinter.printMessage("2) Register\n");
+        CLIPrinter.printMessage("*** What should I do for you? ***%n");
+        CLIPrinter.printMessage("1) Login%n");
+        CLIPrinter.printMessage("2) Register%n");
 
         return getMenuChoice(1, 2);
     }

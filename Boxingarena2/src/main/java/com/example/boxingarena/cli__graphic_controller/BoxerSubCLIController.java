@@ -29,7 +29,7 @@ public class BoxerSubCLIController {
                    CLIPrinter.printMessage(sub);
                 }
             }
-            CLIPrinter.printMessage("\nList of Subscription \nReturn To BoxerManager ");
+            CLIPrinter.printMessage("%nList of Subscription %nReturn To BoxerManager ");
             new BoxerCLIController().start(id);
 
     }

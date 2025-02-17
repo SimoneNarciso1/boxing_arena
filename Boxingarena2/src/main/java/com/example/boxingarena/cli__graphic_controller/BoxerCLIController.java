@@ -52,11 +52,11 @@ public class BoxerCLIController extends  NavigatorCliController{
 
     private int adminManage() {
 
-        CLIPrinter.printMessage("*** What do you want to do ? ***\n");
-        CLIPrinter.printMessage("1) Join Tournament\n");
-        CLIPrinter.printMessage("2) View Ranking\n");
-        CLIPrinter.printMessage("3) View Subscription\n");
-        CLIPrinter.printMessage("4) Logout\n");
+        CLIPrinter.printMessage("*** What do you want to do ? ***%n");
+        CLIPrinter.printMessage("1) Join Tournament%n");
+        CLIPrinter.printMessage("2) View Ranking%n");
+        CLIPrinter.printMessage("3) View Subscription%n");
+        CLIPrinter.printMessage("4) Logout%n");
         return getMenuChoice(1, 4);
     }
     private void logout() {

@@ -42,9 +42,9 @@ public class RefereeCLIController extends NavigatorCliController{
 
     private int adminManage() {
 
-        CLIPrinter.printMessage("*** What do you want to do ? ***\n");
-        CLIPrinter.printMessage("1) View List\n");
-        CLIPrinter.printMessage("2) Logout\n");
+        CLIPrinter.printMessage("*** What do you want to do ? ***%n");
+        CLIPrinter.printMessage("1) View List%n");
+        CLIPrinter.printMessage("2) Logout%n");
         return getMenuChoice(1, 2);
     }
     private void logout() {

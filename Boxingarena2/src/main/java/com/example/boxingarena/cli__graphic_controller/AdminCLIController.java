@@ -54,10 +54,10 @@ public class AdminCLIController extends NavigatorCliController{
 
     private int adminManage() {
 
-        CLIPrinter.printMessage("*** What do you want to do ? ***\n");
-        CLIPrinter.printMessage("1) Create Tournament\n");
-        CLIPrinter.printMessage("2) View Tournament\n");
-        CLIPrinter.printMessage("3) Logout\n");
+        CLIPrinter.printMessage("*** What do you want to do ? ***%n");
+        CLIPrinter.printMessage("1) Create Tournament%n");
+        CLIPrinter.printMessage("2) View Tournament%n");
+        CLIPrinter.printMessage("3) Logout%n");
         return getMenuChoice(1, 3);
     }
 

@@ -42,7 +42,7 @@ public class BoxerJoinCLIController {
                 CLIPrinter.printMessage(tournamentDetails);
             }
 
-            CLIPrinter.printMessage("\nVuoi procedere con il pagamento e l'iscrizione per un torneo? Inserisci l'ID del torneo:");
+            CLIPrinter.printMessage("%nVuoi procedere con il pagamento e l'iscrizione per un torneo? Inserisci l'ID del torneo:");
             try (Scanner scanner = new Scanner(System.in)) {
                 int tournamentId = Integer.parseInt(scanner.nextLine().trim());
                 BoxingTournament selectedTournament = tournaments.stream()
@@ -51,14 +51,14 @@ public class BoxerJoinCLIController {
                         .orElse(null);
 
                 if (selectedTournament != null) {
-                    CLIPrinter.printMessage("\nInsert Boxer Name");
+                    CLIPrinter.printMessage("%nInsert Boxer Name");
                     String userName = reader.readLine();
                     payAndSubscriptionCLI(id, userName, selectedTournament);
                 } else {
-                   CLIPrinter.printMessage("\nID torneo non trovato.");
+                   CLIPrinter.printMessage("%nID torneo non trovato.");
                 }
             } catch (NumberFormatException e) {
-                CLIPrinter.printMessage("\nInput non valido.");
+                CLIPrinter.printMessage("%nInput non valido.");
             } catch (Exception e) {
                 throw new InvalidFormatException(e);
             }
