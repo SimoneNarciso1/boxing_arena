@@ -1,4 +1,4 @@
-package test.bean;
+package com.example.boxingarena.bean;
 
 import org.junit.jupiter.api.Test;
 

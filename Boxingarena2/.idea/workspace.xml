@@ -104,11 +104,11 @@
       <recent name="C:\Users\alema\Desktop\ISPW Progetto\Code\BoxingArena2\src\main\resources\com\example\kartgp\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/example/boxingarena" />
       <recent name="C:\Users\simon\Desktop\narciso simone\Boxingarena2\src\main\java\com\example\boxingarena\exception" />
       <recent name="C:\Users\simon\Desktop\narciso simone\Boxingarena2\src\main\resources\com\example\boxingarena\view" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/BoxingArena/view" />
-      <recent name="C:\Users\alema\Desktop\ISPW Progetto\Code\BoxingArena2\src\main\resources\com\example\kartgp\view" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.BoxingArena2" />
@@ -122,7 +122,7 @@
       <recent name="com.example.BoxingArena2.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApp">
+  <component name="RunManager" selected="JUnit.UserBeanTest">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -151,48 +151,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TournamentBCETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoxingArena2" />
+    <configuration name="TournamentBCETest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boxingarena" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.BoxingArena2.pattern.*" />
+          <option name="PATTERN" value="com.example.boxingarena.pattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.BoxingArena2.pattern" />
-      <option name="MAIN_CLASS_NAME" value="com.example.BoxingArena2.pattern.TournamentBCETest" />
+      <option name="PACKAGE_NAME" value="com.example.boxingarena.pattern" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.pattern.TournamentBCETest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boxingarena" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.boxingarena.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.boxingarena.bean" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.bean.UserBeanTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoxingArena2" />
+      <module name="boxingarena" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.BoxingArena2.dao.*" />
+          <option name="PATTERN" value="com.example.boxingarena.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.BoxingArena2.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.BoxingArena2.dao.UserDaoTest" />
+      <option name="PACKAGE_NAME" value="com.example.boxingarena.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.dao.UserDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.loginWrongUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoxingArena2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.BoxingArena2.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.BoxingArena2.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.BoxingArena2.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="loginWrongUser" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -213,17 +212,17 @@
     <list>
       <item itemvalue="Application.MainCLIApp" />
       <item itemvalue="Application.MainApp" />
-      <item itemvalue="JUnit.TournamentBCETest" />
+      <item itemvalue="JUnit.TournamentBCETest (1)" />
+      <item itemvalue="JUnit.UserBeanTest" />
       <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.UserDaoTest.loginWrongUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserBeanTest" />
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.TournamentBCETest (1)" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.MainCLIApp" />
-        <item itemvalue="JUnit.TournamentBCETest" />
-        <item itemvalue="JUnit.UserDaoTest.loginWrongUser" />
-        <item itemvalue="JUnit.UserDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +314,8 @@
       <workItem from="1739817528881" duration="83000" />
       <workItem from="1739818357805" duration="517000" />
       <workItem from="1739819162367" duration="103000" />
-      <workItem from="1739819358182" duration="5788000" />
+      <workItem from="1739819358182" duration="6388000" />
+      <workItem from="1739904802153" duration="1544000" />
     </task>
     <task id="LOCAL-00001" summary="first commit1">
       <option name="closed" value="true" />

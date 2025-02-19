@@ -210,6 +210,8 @@ public class LoginController extends NavigatorController implements Initializabl
         boolean check = userControllerApp.signing(userBean);
         if(check) {
             adminForm.setVisible(false);
+            boxerForm.setVisible(false);
+            refreeForm.setVisible(false);
             loginForm.setVisible(true);
         }
     }

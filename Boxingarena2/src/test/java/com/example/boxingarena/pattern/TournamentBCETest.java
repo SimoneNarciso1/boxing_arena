@@ -1,7 +1,7 @@
-package test.pattern;
+package com.example.boxingarena.pattern;
 
-import com.example.BoxengArena.bean.TournamentBean;
-import com.example.BoxengArena.bean.UserBean;
+import com.example.boxingarena.bean.TournamentBean;
+import com.example.boxingarena.bean.UserBean;
 import com.example.boxingarena.controller_app.TournamentControllerApp;
 import org.junit.jupiter.api.Test;
 

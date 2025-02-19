@@ -1,6 +1,6 @@
-package test.dao;
+package com.example.boxingarena.dao;
 
-import com.example.kartgp.entity.User;
+import com.example.boxingarena.entity.User;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.fail;
