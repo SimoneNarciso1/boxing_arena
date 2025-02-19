@@ -122,7 +122,7 @@
       <recent name="com.example.BoxingArena2.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserBeanTest">
+  <component name="RunManager" selected="JUnit.UserDaoTest.loginWrongUser">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-23" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -134,34 +134,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainCLIApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.MainCLIApp" />
-      <module name="boxingarena" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.BoxingArena2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TournamentBCETest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boxingarena" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.boxingarena.pattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.boxingarena.pattern" />
-      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.pattern.TournamentBCETest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,6 +168,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.loginRightUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boxingarena" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.boxingarena.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.boxingarena.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="loginRightUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.loginWrongUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boxingarena" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.boxingarena.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.boxingarena.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.boxingarena.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="loginWrongUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="BoxingArena2" />
       <method v="2">
@@ -210,19 +214,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainCLIApp" />
       <item itemvalue="Application.MainApp" />
-      <item itemvalue="JUnit.TournamentBCETest (1)" />
       <item itemvalue="JUnit.UserBeanTest" />
+      <item itemvalue="JUnit.UserDaoTest.loginRightUser" />
       <item itemvalue="JUnit.UserDaoTest" />
+      <item itemvalue="JUnit.UserDaoTest.loginWrongUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.loginWrongUser" />
+        <item itemvalue="JUnit.UserDaoTest.loginRightUser" />
+        <item itemvalue="Application.MainApp" />
         <item itemvalue="JUnit.UserBeanTest" />
         <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.TournamentBCETest (1)" />
-        <item itemvalue="Application.MainApp" />
-        <item itemvalue="Application.MainCLIApp" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +319,7 @@
       <workItem from="1739818357805" duration="517000" />
       <workItem from="1739819162367" duration="103000" />
       <workItem from="1739819358182" duration="6388000" />
-      <workItem from="1739904802153" duration="1544000" />
+      <workItem from="1739904802153" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="first commit1">
       <option name="closed" value="true" />
